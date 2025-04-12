@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         {
             movement = Input.GetAxisRaw("Vertical");
         }
-        rb.linearVelocityY = movement * speed * Time.deltaTime;
+        rb.linearVelocityY = movement * speed;
     }
 
     public void Reset()

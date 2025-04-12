@@ -4,6 +4,7 @@ public class Ball : MonoBehaviour
 {
     public float speed = 300f; // Se inicia en el inspector
     public Rigidbody2D rb; // Se inicia en el inspector
+    public float speedIncrease = 0.1f;
 
     private Vector2 startPos; // Se inicia en el inspector
 
@@ -27,5 +28,12 @@ public class Ball : MonoBehaviour
         transform.position = startPos;
         Launch();
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            rb.linearVelocity *= 1 + speedIncrease;
+        }
+    }
 }

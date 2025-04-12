@@ -18,7 +18,8 @@ public class IA : MonoBehaviour
     {
         if (transform.position.y > ball.transform.position.y) // Si la posición de la IA es mayor que la de la pelota, se mueve hacia abajo
         {
-            transform.Translate(Vector3.down * speed);//Tambien podriamos: transform.position += 
+            //Creo que el Vector era un Vector2 pero tenia el mismo error, por eso lo cambié a Vector 3 por si pudiese ser la solución.
+            transform.Translate(Vector3.down * speed); //Tambien podriamos: transform.position += 
 
         } else if (transform.position.y < ball.transform.position.y) // Si la posición de la IA es menor que la de la pelota, se mueve hacia arriba
         {

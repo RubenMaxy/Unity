@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: 0
-  speed: 30
+  speed: 3
   rb: {fileID: 230024872}
 --- !u!114 &230024876
 MonoBehaviour:
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243021d4f2e3ffa4ca6ace1cc193a1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 0.006
   ball: {fileID: 350137329}
 --- !u!1 &350137329
 GameObject:
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c490a08353765344ab8da38f44e497c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
+  speed: 75
   rb: {fileID: 350137331}
   speedIncrease: 0.1
 --- !u!1 &438258362
@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: 1
-  speed: 30
+  speed: 3
   rb: {fileID: 1480802998}
 --- !u!1 &1485569455
 GameObject:

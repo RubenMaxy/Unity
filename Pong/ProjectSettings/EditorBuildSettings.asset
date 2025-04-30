@@ -7,13 +7,16 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: c4353d3a5e5dc0f4b8ffea0c54b568b5
+    guid: 400beb3ecbe4734499eab2508c910b8b
   - enabled: 1
     path: Assets/Scenes/PlayerCPU.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/PVP.unity
-    guid: 800a24a18bbb0654c84cfae2cdf6cee6
+    guid: ef254e9452ec1c043b429ad66e2e6192
+  - enabled: 1
+    path: Assets/Scenes/WinnerScene.unity
+    guid: 31a6fa3427eaebc468f993f36b0a5942
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

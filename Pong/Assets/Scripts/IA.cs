@@ -2,28 +2,26 @@ using UnityEngine;
 
 public class IA : MonoBehaviour
 {
-    /*
-    * Esta propiedad hace que una variable privada la podamos modificar desde el inspector
-    */
-    [SerializeField] private float speed = 0.1f;
+    [SerializeField] private float speed = 5f; //Velocidad de movimiento, se modificará en el inspector
     public GameObject ball;
 
+
+    // Update is called once per frame
     void Update()
     {
         Movement();
     }
 
-    //Movimiento de la pala en base a la posición de la bola.
-    public void Movement()
+    private void Movement()
     {
-        if (transform.position.y > ball.transform.position.y) // Si la posición de la IA es mayor que la de la pelota, se mueve hacia abajo
-        {
-            //Creo que el Vector era un Vector2 pero tenia el mismo error, por eso lo cambié a Vector 3 por si pudiese ser la solución.
-            transform.Translate(Vector2.down * speed); //Tambien podriamos: transform.position += 
 
-        } else if (transform.position.y < ball.transform.position.y) // Si la posición de la IA es menor que la de la pelota, se mueve hacia arriba
+        if (transform.position.y > ball.transform.position.y)
         {
-            transform.Translate(Vector2.up * speed);
+            transform.Translate(Vector2.down * speed * Time.deltaTime);
+            //Tambien podriamos: transform.position += new Vector3(0,-speed* Time.deltaTime,0);
+        } else if (transform.position.y < ball.transform.position.y)
+        {
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
         }
     }
 }
